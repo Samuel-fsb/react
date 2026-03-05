@@ -15,10 +15,10 @@ function App() {
 
   return (
     <div className='App'>
-    <h1>Alterando o JSX</h1>
-    <p>Olá, {NewName}</p>
-    <p>Soma: {Sum(1, 4)}</p>
-    <img src={url} alt='Minha Imagem'></img>
+      <h1>Alterando o JSX</h1>
+      <p>Olá, {NewName}</p>
+      <p>Soma: {Sum(1, 4)}</p>
+      <img src={url} alt='Minha Imagem'></img>
     </div>
   );
 }
