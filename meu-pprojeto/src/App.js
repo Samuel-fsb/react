@@ -6,10 +6,13 @@ import Pessoa from './componets/Pessoa'
 
 function App() {
 
-  const nome = 'Maira';
+  const nome = 'Maria';
 
   return(
     <div className='App'>
+      <h2>log</h2>
+      <Frase/>
+      <Frase/>
       <HelloWorld/>
       <SayMyName nome="Julia"/>
       <SayMyName nome="Samuel"/>
