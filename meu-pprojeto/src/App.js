@@ -1,8 +1,9 @@
 import logo from './logo.svg';
 import './App.css';
 import HelloWorld from './componets/HelloWorld';
-import SayMyName from './componets/SayMyName'
-import Pessoa from './componets/Pessoa'
+import SayMyName from './componets/SayMyName';
+import Pessoa from './componets/Pessoa';
+import List from './componets/List';
 
 function App() {
 
@@ -11,8 +12,6 @@ function App() {
   return(
     <div className='App'>
       <h2>log</h2>
-      <Frase/>
-      <Frase/>
       <HelloWorld/>
       <SayMyName nome="Julia"/>
       <SayMyName nome="Samuel"/>
@@ -20,6 +19,7 @@ function App() {
       <Pessoa nome="Rodrigo" 
       idade="28" profissao="Programador" 
       foto="https://via.placeholder.com/150"/>
+      <List/>
     </div>
   );
 
