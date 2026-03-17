@@ -1,10 +1,5 @@
-import logo from './logo.svg';
 import './App.css';
-import HelloWorld from './componets/HelloWorld';
-import SayMyName from './componets/SayMyName';
-import Pessoa from './componets/Pessoa';
-import List from './componets/List';
-import Form from './componets/Form';
+import Events from './componets/Events';
 
 function App() {
 
@@ -12,16 +7,8 @@ function App() {
 
   return(
     <div className='App'>
-      <h2>log</h2>
-      <HelloWorld/>
-      <SayMyName nome="Julia"/>
-      <SayMyName nome="Samuel"/>
-      <SayMyName nome={nome}/>
-      <Pessoa nome="Rodrigo" 
-      idade="28" profissao="Programador" 
-      foto="https://via.placeholder.com/150"/>
-      <List/>
-      <Form/>
+      <h2>Testando Eventos</h2>
+      <events/>
     </div>
   );
 
