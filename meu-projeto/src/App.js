@@ -4,6 +4,7 @@ import HelloWorld from './componets/HelloWorld';
 import SayMyName from './componets/SayMyName';
 import Pessoa from './componets/Pessoa';
 import List from './componets/List';
+import Form from './componets/Form';
 
 function App() {
 
@@ -20,6 +21,7 @@ function App() {
       idade="28" profissao="Programador" 
       foto="https://via.placeholder.com/150"/>
       <List/>
+      <Form/>
     </div>
   );
 
