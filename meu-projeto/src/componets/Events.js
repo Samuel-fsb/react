@@ -1,4 +1,4 @@
-function Events(){
+function Event(){
 
     function MeuEvento(){
         console.log('Fui ativado')
@@ -12,4 +12,4 @@ function Events(){
     );
 };
 
-export default Events();
+export default Event();
