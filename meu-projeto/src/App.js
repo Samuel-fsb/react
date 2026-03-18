@@ -1,4 +1,5 @@
 import './App.css';
+import Condicional from './componets/Condicional';
 import Evento from './componets/Evento';
 import Form from './componets/Form';
 import Button from './componets/button'
@@ -9,9 +10,8 @@ function App() {
 
   return(
     <div className='App'>
-      <h2>Testando Eventos</h2>
-      <Evento/>
-      <Button/>
+      <h2>Renderização Condicional</h2>
+      <Condicional/>
     </div>
   );
 
