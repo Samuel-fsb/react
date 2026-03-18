@@ -1,4 +1,4 @@
-import{ useState, useState } from 'react';
+import{ useState} from 'react';
 
 function Form(){
     function cadastrarUsuario(e){

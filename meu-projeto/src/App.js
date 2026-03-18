@@ -1,6 +1,7 @@
 import './App.css';
-import Event from './componets/Events';
+import Evento from './componets/Evento';
 import Form from './componets/Form';
+import Button from './componets/button'
 
 function App() {
 
@@ -9,8 +10,8 @@ function App() {
   return(
     <div className='App'>
       <h2>Testando Eventos</h2>
-      <Event/>
-      <Form/>
+      <Evento/>
+      <Button/>
     </div>
   );
 
