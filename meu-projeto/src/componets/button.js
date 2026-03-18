@@ -2,7 +2,7 @@ function Button(props){
 
     return(
         <duv>
-            <button>{props.text}</button>
+            <button onClick={props.event}>{props.text}</button>
         </duv>
     )
 };
