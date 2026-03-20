@@ -1,17 +1,15 @@
 import './App.css';
-import Condicional from './componets/Condicional';
-import Evento from './componets/Evento';
-import Form from './componets/Form';
-import Button from './componets/button'
+import Lista2 from './componets/Lista2'
 
 function App() {
 
-  const nome = 'Maria';
+  const MeusItens = ['React', 'Vue', 'Angular']
+
 
   return(
     <div className='App'>
-      <h2>Renderização Condicional</h2>
-      <Condicional/>
+      <h2>Renderização de Listas</h2>
+      <Lista2 itens={MeusItens}/>
     </div>
   );
 
