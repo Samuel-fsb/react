@@ -1,13 +1,15 @@
-import {BrowerRouter as Router, Switch, Route, Link} from 'react-router-dom'
+import {BrowserRouter as Router, Route, Route, Link} from 'react-router-dom'
 import Home from './paginas/Home'
 import Empresa from './paginas/Empresa'
 import Contato from './paginas/Contato'
+import Menu from './componets/Menu'
 
 function App() {
 
   return(
     <Router>
 
+      <Menu></Menu>
       <ul>
         <li>
           <Link to="home">Home</Link>
@@ -27,18 +29,16 @@ function App() {
       </ul>
 
     <Routes>
-      <Route path='/Home'>
-          <Home></Home>
-      </Route>
 
-      
-      <Route path='/Empresa'>
-          <Empresa></Empresa>
-      </Route>
-      <Route path='/Contato'>
-          <Contato></Contato>
-      </Route>
+      <Route exact path='/Home' element={<Home></Home>}></Route>
+
+
+      <Route exact path='/Empresa' element={<Empresa></Empresa>}></Route>
+
+      <Route exact path='/Contato' element={<Contato></Contato>}></Route>
+
     </Routes>
+
     </Router>
   );
 
