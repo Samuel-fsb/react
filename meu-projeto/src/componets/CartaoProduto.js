@@ -1,4 +1,4 @@
-function CartaoProduto({nome, preco, categoria, item=[]}){
+function CartaoProduto({nome, preco, categoria, item=[], AplicarDesconto}){
 
     return(
         <div className="cartao">
@@ -8,6 +8,7 @@ function CartaoProduto({nome, preco, categoria, item=[]}){
             <ul>
                 {item.map((elemento, index) => <li key={index}>{elemento}</li>)}
             </ul>
+            <button onClick={AplicarDesconto}>Receber Desconto</button>
         </div>
     );
 
