@@ -5,7 +5,7 @@ function Nomes(){
     const [nome, SetNome] = useState("Julia");
 
     useEffect(() => {
-        console.log("O nome mudou para" + nome);
+        console.log("O nome mudou para " + nome);
     }, [nome]);
 
     return(
