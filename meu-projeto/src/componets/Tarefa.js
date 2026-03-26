@@ -2,8 +2,6 @@ import { useState, useEffect } from "react";
 
 function Tarefa({ titulo, concluida}){
 
-    const [y] 
-
 
     useEffect(() => {
         const BuscarDados = async () => {
