@@ -12,14 +12,20 @@ function App() {
     <Container>
       <Routes>
 
-        <Route exact path='/'>
-        <Home></Home>
+        <Route exact path="/">
+        <Home />
         </Route>
 
-        <Route exact path='/'>
-        <Home></Home>
+        <Route exact path="/company">
+        <Company />
         </Route>
+
+        <Route exact path="/newproject">
+        <NewProject />
+        </Route>
+
       </Routes>
+      <p>Footer</p>
     </Container>
 
   );
