@@ -1,23 +1,12 @@
-import { useState, useEffect } from "react";
-
-function Tarefa({ titulo, concluida}){
 
 
-    useEffect(() => {
-        const BuscarDados = async () => {
-            try {
-                const Dados = await fetch('https://jsonplaceholder.typicode.com/todos?_limit=5 (o _limit=5')
-            } catch (error) {
-                
-            }
-        }
-    });
-
-    
+function Tarefa({ titulo, concluida, AoRemover}){
 
     return(
-        <div>
-
+        <div className="Item_Tarefa">
+            <sapn concluida={concluida > 0? ✅ : ⏳}></sapn>
+            <h1 texto={titulo}></h1>
+            <button onClick={AoRemover}></button>
         </div>
     );
 

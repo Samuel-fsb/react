@@ -5,7 +5,16 @@ function App() {
 
   return(
     <div>
-      <Tarefa/>
+      <Tarefa />
+      useEffect(() => {
+        const BuscarDados = async () => {
+            try {
+                const Dados = await fetch('https://jsonplaceholder.typicode.com/todos?_limit=5')
+            } catch (error) {
+                
+            }
+        }
+    } []);
     </div>
   );
 
