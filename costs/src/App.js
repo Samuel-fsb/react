@@ -1,4 +1,5 @@
-import { browserRouter as Router, Routes, Route } from 'react-router-dom'
+import { browserRouter as Router, Routes, Route, Link } from 'react-router-dom'
+import Container from './componets/Container';
 
 function App() {
   return (
@@ -9,7 +10,7 @@ function App() {
       </ul>
     </Router>
 
-    <Container>
+    <>
       <Routes>
 
         <Route exact path="/">
@@ -26,7 +27,7 @@ function App() {
 
       </Routes>
       <p>Footer</p>
-    </Container>
+    </>
 
   );
 }
