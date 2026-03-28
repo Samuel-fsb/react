@@ -14,7 +14,7 @@ function App() {
             } catch (error) {
                 console.log("Erro ao buscar os dados" + error);
             }
-        }
+        }k
 
         BuscarDados();
     }, []);
