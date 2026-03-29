@@ -1,5 +1,3 @@
-
-
 function Tarefa({ titulo, concluida, AoRemover}){
 
     return(

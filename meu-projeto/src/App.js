@@ -14,11 +14,14 @@ function App() {
             } catch (error) {
                 console.log("Erro ao buscar os dados" + error);
             }
-        }k
+        }
 
         BuscarDados();
     }, []);
 
+  function AoRemover(id){
+    SetLista(Lista.filter(item => item.id !== id))
+  };
 
   return(
     <div>
@@ -27,9 +30,10 @@ function App() {
       key={item.id}
       titulo={item.title}
       concluida={item.completed}
+      AoRemover={() => AoRemover(item.id)}
     /> 
     ))}
-    </div>
+  </div>
   );
 
 };
