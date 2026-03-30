@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import Tarefa from "./componets/Tarefa"
+import Tarefa from "./componets/Tarefa";
 
 function App() {
 
