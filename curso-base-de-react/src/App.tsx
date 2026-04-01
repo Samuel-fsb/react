@@ -1,9 +1,16 @@
+import { useState } from "react";
+
 export function App() {
 
+  const [ContarMaisUm, SetCount] = useState(0); 
+
   return (
-    <>
-    <p>Hello world!</p>
-    </>
+    <div>
+      <button onClick={() => SetCount(ContarMaisUm + 1)}>
+     { ContarMaisUm }
+      
+      </button>
+    </div>
   )
 }
 
