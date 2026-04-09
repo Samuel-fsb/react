@@ -1,25 +1,28 @@
-import { useState } from "react";
+import { useState } from 'react';
 
 export function App() {
 
-  const [Contar, SetCount] = useState(0); 
-  const [Hide, SetHide] = useState(false); 
+  const [Lista, SetLista] = useState([
+    { id: '1', label: 'Fazer Café',},
+    { id: '2', label: 'Fazer Almoço',},
+    { id: '3', label: 'Fazer Janta',},
+    { id: '4', label: 'Fazer Janta',},
+  ]);
+
   return (
     <div>
 
-      {Hide && <p>Teste 1</p>}
-      {!Hide && <p>Teste 2</p>} 
+    <input type="number" name="" id="" />
 
-      {Hide ? <p>Teste 1</p> : <p>Teste 2</p>}
+    <button>
+      Adicionar
+    </button>
 
-      <button onClick={() => SetCount(Contar+ 1)}>
-      {Contar}
-      </button>
-
-      <button onClick={() => SetHide(!Hide)}>
-      Toggle
-      </button> 
-    </div> //Usei a exclamação para negar uma variável.
+    <ul>
+      {Lista.map(ListaItem => (<li key={ListaItem.id}>{ListaItem.label}</li>))}
+    </ul>
+      
+    </div> 
   )
 }
 
