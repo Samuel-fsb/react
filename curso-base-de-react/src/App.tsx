@@ -2,6 +2,7 @@ import { useState } from 'react';
 
 export function App() {
 
+  const [Valor, SetValor] = useState('');
   const [Lista, SetLista] = useState([
     { id: '1', label: 'Fazer Café',},
     { id: '2', label: 'Fazer Almoço',},
@@ -12,15 +13,22 @@ export function App() {
   return (
     <div>
 
-    <input type="number" name="" id="" />
+    <input 
+    
+    value={Valor}
+    onChange={(e) => SetValor(e.target.value)}
+    />
 
-    <button>
+    <button onClick={() => {SetLista([ ...Lista, {id: (Lista.length + 1).toString(), label: Valor} ]);
+    SetValor('');
+    }}>
+      
       Adicionar
     </button>
 
-    <ul>
+    <ol>
       {Lista.map(ListaItem => (<li key={ListaItem.id}>{ListaItem.label}</li>))}
-    </ul>
+    </ol>
       
     </div> 
   )
